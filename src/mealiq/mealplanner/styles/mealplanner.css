@@ -1,0 +1,250 @@
+#app_container {
+    background: #fff;
+}
+
+.button {
+    border: 1px solid #3da747;
+    background: none;
+    color: #3da747;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    outline: none !important;
+}
+.button:hover {
+    background: #3da747;
+    color: #fff;
+    border: 1px solid #3da747;
+}
+.button:focus {
+    outline: none !important;
+}
+
+.mealweekview .colheader {
+    text-align: center;
+}
+
+.mealweekview .rowheader, .mealweekview .cell {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.diary-header {
+    padding: 10px;
+    background-color: white;
+}
+
+.diary-header .price-row button {
+    margin: 0 auto;
+}
+
+.day-meal {
+    margin: 10px 10px 20px;
+}
+
+.recipe-card {
+    margin: 0 0 20px 0;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.recipe-card figure {
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.recipe-card .card-title {
+    margin: 0;
+    color: #3da747;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+ul li.day-plan {
+    padding: 0 20px 0 20px;
+    list-style: none;
+    margin: 0 0 20px 0;
+}
+ul li.day-plan h3 {
+    margin: 0 0 20px;
+}
+
+ul li.day-plan:nth-child(n-1) .deck {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.recipe-thumbnail figure {
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.deck {
+    margin-bottom: 50px;
+    border-bottom: 1px solid #7d7d7d;
+    padding-bottom: 50px;
+}
+
+.recipe-nutrition {
+    margin:0;
+    padding: 0;
+}
+.recipe-nutrition li {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 0 10px 10px 0;
+}
+.recipe-nutrition li:first-child {
+    position: static !important;
+}
+
+.recipe-text ul {
+    margin: 0;
+    padding: 0;
+}
+.recipe-text ul li {
+    display: inline-block;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 0 10px 10px 0;
+    font-size: 16px;
+}
+
+.recipe-card input[type="text"],
+.recipe-card textarea {
+    border: 1px solid #ddd;
+    outline: none;
+    padding: 5px 10px;
+    resize: none;
+    margin: 0 0 20px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .button {
+        width: 47%;
+        margin: 0 10px 10px 0;
+    }
+    
+    #app_container ul {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    ul li.day-plan {
+        padding: 15px;
+    }
+    .cart-icon {
+        margin: 0;
+    }
+    .recipe-card figure {
+        border-radius: 0;
+        margin: 0 -15px;
+    }
+}
+
+
+.meal-tab {
+    margin: 0 0 20px;
+    padding: 0;
+    width: auto;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 26px;
+}
+.meal-tab li {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    margin: 0 20px 0 0;
+    
+    color: #aaa;
+}
+.meal-tab li.active {
+    border-bottom: 2px solid #333;
+    color: #333;
+}
+
+@media only screen and (max-width: 767px) {
+    .day-container-horizontal {
+        padding: 0 20px;
+    }
+}
+
+.mealsSelector {
+    margin: 10px auto;
+    width: 96vw;
+    max-height: 100vh;
+    background: white;
+    overflow: auto;
+}
+
+.mealsSelector > .sticky {
+    position: sticky;
+    z-index: 2020;
+    top: 0;
+    background: white;
+}
+.selectButtonBlock.row {
+    margin: 0;
+    justify-content: space-between;
+}
+
+.recipe-card-wrapper {
+    padding: 5px;
+    border-bottom: 1px solid #3da747;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.buttonSelect {
+    border: none;
+    color: #3da747;
+    margin-right: 5px;
+}
+
+.emptyRecipes {
+    text-align: center;
+    font-size: 24px;
+    color: darkred;
+}
+
+.modalBackground {
+    z-index: 2051;
+    position: absolute;
+    top: 0;
+    background-color: rgba(104, 104, 104, 0.5);
+    height: 100%;
+    width: 100%;
+}
+
+.closeButton {
+    border: none;
+    background: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.form-control {
+    border: 1px solid #3da747;
+    border-bottom: 2px solid #3da747;
+}
