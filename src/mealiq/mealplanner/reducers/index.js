@@ -38,7 +38,7 @@ const diaryReducer = (state, action) => {
         }
         case "ADD_SELECTED_RECIPE": {
             let newRecipe = {
-                date: state.today,
+                date: state.diaryDayVisible,
                 meal_type: state.currentMealType,
                 recipe: action.payload,
             }
